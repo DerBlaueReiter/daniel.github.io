@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name = "author" content = "Daniel">
+  <meta name = "description" content = "Calcola in pochi e semplici passi il numero di ore lavorate nel mese">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta property = "og:image" content = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.inail.it%2Fcs%2Finternet%2Fcomunicazione%2Fnews-ed-eventi%2Fnews%2Fnews-oil-oms-eccesso-ore-lavoro-malattie-cardiovascolari-2021.html&psig=AOvVaw0OMV2fTKHsB8TqFCqJEbTa&ust=1700830888662000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOC32fmW2oIDFQAAAAAdAAAAABAE">
+  <meta property = "og:description" content = "Calcola in pochi e semplici passi il numero di ore lavorate nel mese!">
+  <meta property = "og:title" content = "Calcolatore Ore Lavorative">
+  <title>Calcolatore ore lavorative</title>
+  <link rel = "stylesheet" href="stile.css">
+  <script src='scriptsito.js'></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Calcolatore Ore Lavorative</h1>
+    <div class="controls">
+      <label for="year">Anno:</label>
+      <input type="number" id="year" value="2023" min="2000" max="2100">
+      <label for="month">Mese:</label>
+      <select id="month">
+        <option value="1">Gennaio</option>
+        <option value="2">Febbraio</option>
+        <option value="3">Marzo</option>
+        <option value="4">Aprile</option>
+        <option value="5">Maggio</option>
+        <option value="6">Giugno</option>
+        <option value="7">Luglio</option>
+        <option value="8">Agosto</option>
+        <option value="9">Settembre</option>
+        <option value="10">Ottobre</option>
+        <option value="11">Novembre</option>
+        <option value="12">Dicembre</option>
+      </select>
+      <button onclick="createTable()">Inserisci orari</button>
+    </div>
+    <div id="tableContainer"></div>
+    <div id="totalHours"></div>
+  </div>
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js'></script>
+
+</body>
+</html>
